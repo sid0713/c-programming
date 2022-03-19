@@ -1,0 +1,23 @@
+# include<stdio.h>
+# include<conio.h>
+int main()
+{
+	int ch=8,i=2,c,a=0,b=1;
+	if(ch==1)
+	printf("%d",a);
+	else if(ch==2)
+	printf("%d %d",a,b);
+	else
+	{
+		printf("%d\t %d\t",a,b);
+		while(i++<ch)
+		{
+			c=a+b;
+			printf("%d\t",c);
+			a=b;
+			b=c;
+		}
+	}
+	getch();
+	return 0;
+}
